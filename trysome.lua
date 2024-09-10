@@ -16,6 +16,31 @@ notifications:Notify("Welcome To Project Spectrum 8.0")
 notifications:Notify(" ")
 notifications:Notify("by xZPUHigh & Exclusive Edition")
 
+local MessageBox = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/NotificationGUI/main/source.lua"))()
+
+
+--[[
+   MessageBoxIcons:
+      • Question
+      • Error
+      • Warning
+
+   MessageBoxButtons:
+      • YesNo
+      • OKCancel
+      • OK
+--]]
+-- AnchorPoint is 0.5,0.5
+MessageBox.Show({Position = UDim2.new(0.5,0,0.5,0), Text = "Notification", Description = "Don't Forgot Join Discord\n.gg/C3MpUNwsDU\n \nHave Fun!", MessageBoxIcon = "Question", MessageBoxButtons = "OK", Result = function(res)
+   if (res == "Yes") then
+       MessageBox.Show({MessageBoxButtons = "OK", Description = "Wow, you said Yes! Thank you", Text = "YAYYY!"})
+   elseif (res == "No") then
+       MessageBox.Show({MessageBoxButtons = "OK", Description = "Ahh, sorry to dissapoint, I'll try better next time!", Text = "Nooooo"})
+   end
+end})
+
+wait(5)
+
 local _, library = pcall(loadstring(game:HttpGet("https://raw.githubusercontent.com/TrixAde/Osmium/main/OsmiumLibrary.lua")))
 
 local window = library:CreateWindow("Project Spectrum 8.0 | by xZPUHigh & Exclusive Edition // .gg/C3MpUNwsDU")
@@ -54,26 +79,3 @@ local label = cred:CreateLabel("Scripting :","by Trix#2794 / JulMan#1234")
 local batp = cred:CreateButton("Discord Server", function()
     setclipboard("discord.gg/C3MpUNwsDU")
 end)
-
-local MessageBox = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/NotificationGUI/main/source.lua"))()
-
-
---[[
-   MessageBoxIcons:
-      • Question
-      • Error
-      • Warning
-
-   MessageBoxButtons:
-      • YesNo
-      • OKCancel
-      • OK
---]]
--- AnchorPoint is 0.5,0.5
-MessageBox.Show({Position = UDim2.new(0.5,0,0.5,0), Text = "Notification", Description = "Windows 10 MessageBox\nMade by : xHeptc\n \nDo you like this?", MessageBoxIcon = "Question", MessageBoxButtons = "YesNo", Result = function(res)
-   if (res == "Yes") then
-       MessageBox.Show({MessageBoxButtons = "OK", Description = "Wow, you said Yes! Thank you", Text = "YAYYY!"})
-   elseif (res == "No") then
-       MessageBox.Show({MessageBoxButtons = "OK", Description = "Ahh, sorry to dissapoint, I'll try better next time!", Text = "Nooooo"})
-   end
-end})
