@@ -1,3 +1,25 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/Revenant", true))()
+Library.DefaultColor = Color3.fromRGB(0,255,0)
+
+Library:Notification({
+   Text = "Checking Whitelist & HWID...",
+    Duration = 8
+})
+
+wait(0.4)
+Library:Notification({
+   Text = "Loading...",
+    Duration = 11
+})
+
+wait(0.9)
+Library:Notification({
+   Text = "Loaded!!",
+    Duration = 14
+})
+
+wait(0.11)
+
 local notificationLibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/laagginq/ui-libraries/main/xaxas-notification/src.lua"))();
 local notifications = notificationLibrary.new({            
     NotificationLifetime = 7, 
