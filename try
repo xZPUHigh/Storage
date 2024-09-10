@@ -3,22 +3,22 @@ Library.DefaultColor = Color3.fromRGB(0,255,0)
 
 Library:Notification({
    Text = "Checking Whitelist & HWID...",
-    Duration = 8
+    Duration = 15
 })
 
 wait(0.4)
 Library:Notification({
    Text = "Loading...",
-    Duration = 11
+    Duration = 10
 })
 
 wait(0.9)
 Library:Notification({
    Text = "Loaded!!",
-    Duration = 14
+    Duration = 5
 })
 
-wait(0.11)
+wait(5)
 
 local notificationLibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/laagginq/ui-libraries/main/xaxas-notification/src.lua"))();
 local notifications = notificationLibrary.new({            
