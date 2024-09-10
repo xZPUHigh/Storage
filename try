@@ -6,13 +6,13 @@ Library:Notification({
     Duration = 15
 })
 
-wait(0.4)
+wait(10)
 Library:Notification({
    Text = "Loading...",
     Duration = 10
 })
 
-wait(0.9)
+wait(5)
 Library:Notification({
    Text = "Loaded!!",
     Duration = 5
