@@ -59,6 +59,14 @@ local args = {
 game:GetService("ReplicatedStorage").Networking.Units.SummonEvent:FireServer(unpack(args))
 end
 
+while wait(0) do
+    local args = {
+        [1] = "SummonOne",
+        [2] = "Special"
+    }
+    game:GetService("ReplicatedStorage").Networking.Units.SummonEvent:FireServer(unpack(args))
+    end
+
 wait(5)
 
 local args = {
