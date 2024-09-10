@@ -31,7 +31,7 @@ local MessageBox = loadstring(game:HttpGet("https://raw.githubusercontent.com/xH
       • OK
 --]]
 -- AnchorPoint is 0.5,0.5
-MessageBox.Show({Position = UDim2.new(0.5,0,0.5,0), Text = "Notification", Description = "Don't Forgot Join Discord\n.gg/C3MpUNwsDU\n \nHave Fun!", MessageBoxIcon = "Question", MessageBoxButtons = "OK", Result = function(res)
+MessageBox.Show({Position = UDim2.new(0.5,0,0.5,0), Text = "Notification", Description = "Don't Forgot Join Discord\      n.gg/C3MpUNwsDU\n \nHave Fun!", MessageBoxIcon = "Question", MessageBoxButtons = "OK", Result = function(res)
    if (res == "Yes") then
        MessageBox.Show({MessageBoxButtons = "OK", Description = "Wow, you said Yes! Thank you", Text = "YAYYY!"})
    elseif (res == "No") then
