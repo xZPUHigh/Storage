@@ -2,7 +2,7 @@
     hookfunction.lua
 
     Trash Hookfunction For Celery
-    No Credits to Void (me) and free to use and modify.
+    No Credits to ZPU (me) and free to use and modify.
 
     Usage: 
 
