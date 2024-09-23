@@ -6,7 +6,7 @@
 
     Usage: 
 
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/jake1325/Roblox-Functions/main/modules/hookfunction.lua"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/xZPUHigh/Storage/refs/heads/main/hookfunction.lua"))()
 
      hookfunction(print, function()
      warn("hooked print")
